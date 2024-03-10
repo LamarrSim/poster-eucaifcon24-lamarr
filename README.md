@@ -40,7 +40,7 @@ Good agreement is observed by comparing key reconstructed quantities obtained wi
     <li>Department of Physics, University of Milano-Bicocca, Italy</li>
     <li>European Organization for Nuclear Research (CERN), Switzerland</li>
     <li>Department of Physics and Astronomy, University of Manchester, United Kingdom</li>
-    <li>Affiliated with an institute covered by a cooperation agreement with CERN</li>
+    <li>Faculty of Computer Science, HSE University, Russia</li>
   </ol>
 </details>
 
