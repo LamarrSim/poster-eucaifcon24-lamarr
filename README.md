@@ -2,8 +2,8 @@
 
 in [*European AI for Fundamental Physics Conference 2024*](https://www.aanmelder.nl/eucaifcon24) (EuCAIFCon 24)
 
-[![](https://img.shields.io/badge/indico-event-c89e6c?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875)
-[![](https://img.shields.io/badge/indico-contribution-087cfc?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381)
+[![](https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875)
+[![](https://img.shields.io/badge/indico-contribution-1c54ac?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381)
 [![](https://img.shields.io/badge/HTML-poster-E34F26?style=flat&logo=HTML5&logoColor=white)](https://lamarrsim.github.io/poster-eucaifcon24-lamarr/poster.html)
 <!--
 [![](https://img.shields.io/badge/PDF-poster-EC1C24?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381/attachments/xxx/yyy/lamarr_poster_eucaifcon2024.pdf)
