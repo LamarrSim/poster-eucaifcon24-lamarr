@@ -55,25 +55,28 @@
 
 {# Project logos shown on the left side #}
 {% block project_logos %}
-  <a href="http://lhcb.web.cern.ch"><img style="height: 4.5rem; padding-rigth: 0.25rem" src="img/logos/lhcb-logo.png" alt="LHCb logo"></a>
-  <img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/lamarr-white-logo.png" alt="Lamarr logo">
+  {# <a href="http://lhcb.web.cern.ch"><img style="height: 4.5rem; padding-rigth: 0.25rem" src="img/logos/lhcb-logo.png" alt="LHCb logo"></a>
+  <img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/lamarr-white-logo.png" alt="Lamarr logo"> #}
+  <a href="https://home.infn.it/en"><img style="height: 4.5rem; padding-left: 0.5rem; padding-right: 0.25rem" src="img/logos/infn-logo-bkg.png" alt="INFN logo"></a>
+  <a href="https://www.supercomputing-icsc.it/en"><img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/icsc-logo-bkg.png" alt="ICSC logo"></a>
 {% endblock %}
 
 {# Extra logos shown on the right side #}
 {% block logos %}
-  <a href="{{ venue_url }}"><img src="img/logos/eucaifcon24-logo.png" alt="EuCAIFCon logo"></a>
+  <a href="{{ venue_url }}"><img style="padding-right: 1.0rem" src="img/logos/eucaifcon24-logo.png" alt="EuCAIFCon logo"></a>
 {% endblock %}
 
 {### Footer ###}
 
 {# Disclaimer shown on the left side #}
 {% block disclaimer %}
-  on behalf of the LHCb Simulation Project
+  {# on behalf of the LHCb Simulation Project #}
+  ICSC Italian Research Center on High-Performance Computing, Big Data and Quantum Computing
 {% endblock %}
 
 {# Contact information shown on the middle side #}
 {% block contact_info %}
-  contact: <a class="monospace">{{ contact }}</a>
+  {# contact: <a class="monospace">{{ contact }}</a> #}
 {% endblock %}
 
 {# General information shown on the right side #}
@@ -354,7 +357,7 @@
     </p>
   </article>
 
-  {# 10. Conclusions #}
+  {# 10. Conclusions and outlook #}
   <article>
     <header><h3>10. Conclusions and outlook</h3></header>
     <p>
@@ -369,6 +372,15 @@
     <p>
       Future development Lamarr aims to support both integration within the LHCb software stack and its 
       use as a <strong>stand-alone</strong> package.
+    </p>
+  </article>
+
+  {# Acknowledgements #}
+  <article>
+    <header><h3>Acknowledgements</h3></header>
+    <p>
+      This work is partially supported by ICSC – Centro Nazionale di Ricerca in High Performance Computing, 
+      Big Data and Quantum Computing, funded by European Union – NextGenerationEU.
     </p>
   </article>
 
