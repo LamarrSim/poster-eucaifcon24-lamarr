@@ -1,6 +1,6 @@
 # The flash-simulation of the LHCb experiment using the Lamarr framework
 
-in [*European AI for Fundamental Physics Conference 2024*](https://www.aanmelder.nl/eucaifcon24) (EuCAIFCon 24)
+in [*European AI for Fundamental Physics Conference 2024*](https://www.aanmelder.nl/eucaifcon24) (EuCAIFCon24)
 
 [![](https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875)
 [![](https://img.shields.io/badge/indico-contribution-1c54ac?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381)
