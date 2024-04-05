@@ -8,7 +8,7 @@
 {% set venue_short = "EuCAIFCon24" %}
 {% set webpage_title = poster_title + " (" + venue_short + " poster)" %}
 {% set project_url = "" %}
-{% set venue_url = "https://indico.nikhef.nl/event/4875" %}
+{% set venue_url = "https://www.aanmelder.nl/eucaifcon24" %}
 {% set contact = "Matteo.Barbetti@cern.ch" %}
 
 {% set pub_datetime_iso = "2024-04-30" %}
@@ -21,9 +21,11 @@
 {% endblock %}
 
 {% block badges %}
+  {# --------------- #}
   {# For HTML poster #}
-  <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
-  <a href="https://indico.nikhef.nl/event/4875/contributions/20381"><img alt="indico contribution" src="https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white"></a>
+  {# --------------- #}
+  {# <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
+  <a href="https://indico.nikhef.nl/event/4875/contributions/20381"><img alt="indico contribution" src="https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white"></a> #}
   {# <a href="https://indico.nikhef.nl/event/4875/contributions/20381/attachments/xxx/yyy/lamarr_poster_eucaifcon2024.pdf"><img alt="poster PDF" src="https://img.shields.io/badge/PDF-poster-EC1C24?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white"></a> #}
   {# <a href="https://arxiv.org/abs/2303.11428"><img alt="arXiv preprint" src="https://img.shields.io/badge/arXiv-2303.11428-B31B1B?style=flat&logoColor=white"></a> #}
 {% endblock %}
@@ -56,30 +58,44 @@
 
 {# Project logos shown on the left side #}
 {% block project_logos %}
+  {# --------------- #}
   {# For HTML poster #}
+  {# --------------- #}
   {# <a href="http://lhcb.web.cern.ch"><img style="height: 4.5rem; padding-rigth: 0.25rem" src="img/logos/lhcb-logo.png" alt="LHCb logo"></a>
   <img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/lamarr-white-logo.png" alt="Lamarr logo"> #}
   {# <a href="https://home.infn.it/en"><img style="height: 4.5rem; padding-right: 0.25rem" src="img/logos/infn-logo.png" alt="INFN logo"></a>
   <a href="https://www.supercomputing-icsc.it/en"><img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/icsc-logo.png" alt="ICSC logo"></a> #}
-  <div style="width: 24rem">
-    <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding: 0.5rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
-    <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding: 0.5rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
-    <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding: 0.5rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
-    <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding: 0.5rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
-  </div>
+  {# <div style="width: 24rem">
+    <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
+    <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
+    <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
+    <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
+  </div> #}
+  {# -------------- #}
   {# For PDF poster #}
+  {# -------------- #}
   {# <a href="http://lhcb.web.cern.ch"><img style="height: 4.5rem; padding-left: 0.5rem; padding-rigth: 0.25rem" src="img/logos/lhcb-logo.png" alt="LHCb logo"></a>
   <img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/lamarr-white-logo.png" alt="Lamarr logo"> #}
   {# <a href="https://home.infn.it/en"><img style="height: 4.5rem; padding-left: 0.5rem; padding-right: 0.25rem" src="img/logos/infn-logo.png" alt="INFN logo"></a>
   <a href="https://www.supercomputing-icsc.it/en"><img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/icsc-logo.png" alt="ICSC logo"></a> #}
+  <div style="width: 24rem">
+    <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding-right: 0.55rem; padding-bottom: 0.5rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
+    <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding-left: 0.55rem; padding-bottom: 0.5rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
+    <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding-right: 1.0rem; padding-top: 0.5rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
+    <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding-left: 1.0rem; padding-top: 0.5rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
+  </div>
 {% endblock %}
 
 {# Extra logos shown on the right side #}
 {% block logos %}
+  {# --------------- #}
   {# For HTML poster #}
-  <a href="{{ venue_url }}"><img src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
+  {# --------------- #}
+  {# <a href="{{ venue_url }}"><img style="padding: 0.55rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a> #}
+  {# -------------- #}
   {# For PDF poster #}
-  {# <a href="{{ venue_url }}"><img style="padding-right: 1.0rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a> #}
+  {# -------------- #}
+  <a href="{{ venue_url }}"><img style="padding-right: 2.5rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
 {% endblock %}
 
 {### Footer ###}
@@ -87,7 +103,7 @@
 {# Disclaimer shown on the left side #}
 {% block disclaimer %}
   {# on behalf of the LHCb Simulation Project #}
-  ICSC Italian Research Center on High-Performance Computing, Big Data and Quantum Computing
+  <strong>ICSC</strong> Italian Research Center on High-Performance Computing, Big Data and Quantum Computing
 {% endblock %}
 
 {# Contact information shown on the middle side #}
@@ -326,8 +342,6 @@
         <li>providing <strong>ready-to-use datasets</strong> for centralized analysis.</li>
       </ul>
     </p>
-    <p>
-    </p>
     <hr/>
     <figure>
       <img style="width: 49%" src="img/lhcb-figs/Py8_Lambda_c_mu_mass.png" alt="Py8 Lambda_c mass">
@@ -374,9 +388,17 @@
     </p>
   </article>
 
-  {# 10. Conclusions and outlook #}
+  {# 10. The ICSC project #}
   <article>
-    <header><h3>10. Conclusions and outlook</h3></header>
+    <header><h3>10. The ICSC project</h3></header>
+    <p>
+      TBA
+    </p>
+  </article>
+
+  {# 11. Conclusions and outlook #}
+  <article>
+    <header><h3>11. Conclusions and outlook</h3></header>
     <p>
       Great effort is ongoing to put a <strong>fully parametric simulation</strong> of the LHCb experiment 
       into production, aiming to reduce the pressure on computing resources.
@@ -397,7 +419,7 @@
     <header><h3>Acknowledgements</h3></header>
     <p>
       The work presented in this contribution is performed in the framework of Spoke 0 and Spoke 2 of the ICSC 
-      project - Centro Nazionale di Ricerca in High Performance Computing, Big Data and Quantum Computing, 
+      project - <em>Centro Nazionale di Ricerca in High Performance Computing, Big Data and Quantum Computing</em>, 
       funded by the NextGenerationEU European initiative through the Italian Ministry of University and 
       Research, PNRR Mission 4, Component 2: Investment 1.4, Project code CN00000013 - CUP I53C21000340006.
     </p>
@@ -420,9 +442,11 @@
         <li>M. Barbetti, <em>The flash-simulation paradigm and its implementation based on Deep Generative Models for the LHCb experiment at CERN</em>, PhD thesis, University of Firenze, 2024</li>
       </ol>
     </small>
+    {# -------------- #}
     {# For PDF poster #}
-    {# <figure>
+    {# -------------- #}
+    <figure>
       <img style="width: 25%" src="img/qr-code.png" alt="QR code">
-    </figure> #}
+    </figure>
   </article>
 {% endblock %}
