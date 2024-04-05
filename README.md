@@ -3,7 +3,7 @@
 in [*European AI for Fundamental Physics Conference 2024*](https://www.aanmelder.nl/eucaifcon24) (EuCAIFCon24)
 
 [![](https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875)
-[![](https://img.shields.io/badge/indico-contribution-1c54ac?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381)
+[![](https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381)
 [![](https://img.shields.io/badge/HTML-poster-E34F26?style=flat&logo=HTML5&logoColor=white)](https://lamarrsim.github.io/poster-eucaifcon24-lamarr/poster.html)
 <!--
 [![](https://img.shields.io/badge/PDF-poster-EC1C24?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381/attachments/xxx/yyy/lamarr_poster_eucaifcon2024.pdf)
@@ -46,7 +46,7 @@ Good agreement is observed by comparing key reconstructed quantities obtained wi
 
 ## Acknowledgements
 
-This work is partially supported by [ICSC – Centro Nazionale di Ricerca in High Performance Computing, Big Data and Quantum Computing](https://www.supercomputing-icsc.it/en), funded by European Union – NextGenerationEU.
+The work presented in this contribution is performed in the framework of Spoke 0 and Spoke 2 of the [ICSC project](https://www.supercomputing-icsc.it/en) - _Centro Nazionale di Ricerca in High Performance Computing, Big Data and Quantum Computing_, funded by the [NextGenerationEU European initiative](https://next-generation-eu.europa.eu) through the [Italian Ministry of University and Research](https://www.mur.gov.it), [PNRR](https://www.italiadomani.gov.it) Mission 4, Component 2: Investment 1.4, Project code CN00000013 - CUP I53C21000340006.
 
 ## Credits
 

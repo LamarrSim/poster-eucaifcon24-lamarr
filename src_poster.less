@@ -64,6 +64,10 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 @my-eucaif-color-2: #74726b;
 @my-eucaif-color-3: #53a3d3;
 
+@my-icsc-color-1: #2b65af;
+@my-icsc-color-2: #c48e48;
+@my-icsc-color-3: #6eadff;
+
 //////////////////////
 // Global variables //
 //////////////////////
@@ -84,12 +88,13 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 
 @grid-gap: 1rem;
 
-@color-head-bkg: @my-eucaif-color-3;
 @color-head-title: white;
+@color-head-bkg: @my-icsc-color-1;
+@color-foot-bkg: @my-icsc-color-2;
 @color-block-title: white;
-@color-block-title-bkg: @my-eucaif-color-1;
+@color-block-title-bkg: black;
 @color-block-bkg: white;
-@color-accent: @my-eucaif-color-1;
+@color-accent: @my-icsc-color-1;
 @color-bkg: @tango-aluminum-3;
 
 ///////////////////
@@ -197,7 +202,6 @@ body {
 
     > header, > footer {
         align-items: center;
-        background: @color-head-bkg;
         color: @color-head-title;
         display: grid;
         grid-gap: @mid-space;
@@ -206,6 +210,7 @@ body {
     }
 
     > header {
+        background: @color-head-bkg;
         font-size: 80%;
 
         img {
@@ -234,6 +239,10 @@ body {
         time {
             margin-top: @thin-space;
         }
+    }
+
+    > footer {
+        background: @color-foot-bkg;
     }
 }
 
