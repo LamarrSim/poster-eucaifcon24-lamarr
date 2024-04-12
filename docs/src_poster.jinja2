@@ -24,8 +24,8 @@
   {# --------------- #}
   {# For HTML poster #}
   {# --------------- #}
-  <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
-  <a href="https://indico.nikhef.nl/event/4875/contributions/20381"><img alt="indico contribution" src="https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white"></a>
+  {# <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
+  <a href="https://indico.nikhef.nl/event/4875/contributions/20381"><img alt="indico contribution" src="https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white"></a> #}
   {# <a href="https://indico.nikhef.nl/event/4875/contributions/20381/attachments/xxx/yyy/lamarr_poster_eucaifcon2024.pdf"><img alt="poster PDF" src="https://img.shields.io/badge/PDF-poster-EC1C24?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white"></a> #}
   {# <a href="https://arxiv.org/abs/2303.11428"><img alt="arXiv preprint" src="https://img.shields.io/badge/arXiv-2303.11428-B31B1B?style=flat&logoColor=white"></a> #}
 {% endblock %}
@@ -65,12 +65,12 @@
   <img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/lamarr-white-logo.png" alt="Lamarr logo"> #}
   {# <a href="https://home.infn.it/en"><img style="height: 4.5rem; padding-right: 0.25rem" src="img/logos/infn-logo.png" alt="INFN logo"></a>
   <a href="https://www.supercomputing-icsc.it/en"><img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/icsc-logo.png" alt="ICSC logo"></a> #}
-  <div style="width: 24rem">
+  {# <div style="width: 24rem">
     <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
     <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
     <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
     <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
-  </div>
+  </div> #}
   {# -------------- #}
   {# For PDF poster #}
   {# -------------- #}
@@ -78,12 +78,12 @@
   <img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/lamarr-white-logo.png" alt="Lamarr logo"> #}
   {# <a href="https://home.infn.it/en"><img style="height: 4.5rem; padding-left: 0.5rem; padding-right: 0.25rem" src="img/logos/infn-logo.png" alt="INFN logo"></a>
   <a href="https://www.supercomputing-icsc.it/en"><img style="height: 4.5rem; padding-left: 0.25rem" src="img/logos/icsc-logo.png" alt="ICSC logo"></a> #}
-  {# <div style="width: 24rem">
+  <div style="width: 24rem">
     <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding-right: 0.55rem; padding-bottom: 0.5rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
     <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding-left: 0.55rem; padding-bottom: 0.5rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
     <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding-right: 1.0rem; padding-top: 0.5rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
     <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding-left: 1.0rem; padding-top: 0.5rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
-  </div> #}
+  </div>
 {% endblock %}
 
 {# Extra logos shown on the right side #}
@@ -91,11 +91,11 @@
   {# --------------- #}
   {# For HTML poster #}
   {# --------------- #}
-  <a href="{{ venue_url }}"><img style="padding: 0.55rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
+  {# <a href="{{ venue_url }}"><img style="padding: 0.55rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a> #}
   {# -------------- #}
   {# For PDF poster #}
   {# -------------- #}
-  {# <a href="{{ venue_url }}"><img style="padding-right: 2.5rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a> #}
+  <a href="{{ venue_url }}"><img style="padding-right: 2.5rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
 {% endblock %}
 
 {### Footer ###}
@@ -136,22 +136,13 @@
   <article>
     <header><h3>2. Fast simulation VS. flash simulation</h3></header>
     <figure>
-      <img style="width: 95%" src="img/schemes/full-sim-scheme.png" alt="full sim schemes">
+      <img style="width: 95%" src="img/schemes/full-fast-sim-scheme.png" alt="full/fast sim schemes">
       <figcaption>
         <small>
           <strong>Detailed simulation</strong> relies on Geant4 to reproduce the radiation-matter
-          interactions that are computed within Gauss*, the LHCb simulation software.
-        </small>
-      </figcaption>
-    </figure>
-    <hr/>
-    <figure>
-      <img style="width: 95%" src="img/schemes/fast-sim-scheme.png" alt="fast sim schemes">
-      <figcaption>
-        <small>
-          <strong><em>Fast simulation</em></strong> techniques aim to speed up the Geant4-based 
-          simulation production by parameterizing the energy deposits instead of relying on 
-          physics models.
+          interactions that are computed within Gauss*, the LHCb simulation software. 
+          <strong><em>Fast simulation</em></strong> techniques aim to speed up Geant4 by parameterizing 
+          the energy deposits instead of relying on physics models.
         </small>
       </figcaption>
     </figure>
@@ -166,14 +157,6 @@
         </small>
       </figcaption>
     </figure>
-    {# <figure>
-      <img style="width: 98%; padding-bottom: 1rem" src="img/schemes/sim-scheme.png" alt="full/fast/flash sim schemes">
-      <figcaption>
-          Data processing flow in the <strong><em>detailed</em></strong> 
-          (top), <strong><em>fast</em></strong> (center) and <strong><em>flash</em></strong> (bottom)
-          simulation paradigms.
-      </figcaption>
-    </figure> #}
   </article>
 
   {# 3. What is Lamarr? #}
@@ -302,7 +285,7 @@
         <li>assuming ordered sequences of photons/clusters, the problem can be modeled with a 
         <strong><em>Transformer</em></strong> model;</li>
         <li>complying with the problem topology, the ECAL response can be modeled with a 
-        <strong><em>Grapha Neural Network</em></strong> (GNN) model</li>
+        <strong><em>Graph Neural Network</em></strong> (GNN) model</li>
       </ul>
     </p>
     <hr/>
@@ -388,12 +371,33 @@
     </p>
   </article>
 
-  {# 10. The ICSC project #}
+  {# 10. The role of ICSC for Flash Simulation #}
   <article>
-    <header><h3>10. The ICSC project</h3></header>
+    <header><h3>10. The role of ICSC for Flash Simulation</h3></header>
     <p>
-      TBA
+      The <strong>lifecycle of a generic flash-simulation model</strong> includes designing, training, optimization, 
+      deployment, and validation, before to be put into production. While the development steps often involve 
+      <strong>multiple GPU nodes</strong> (<em>HPC paradigm</em>), the validation phase typically relies on the same 
+      distributed computing resources employed in the <strong>production environment</strong> (<em>HTC paradigm</em>).
     </p>
+    <p>
+      The aim of <strong>ICSC</strong> (<em>Italian Center for SuperComputing</em>) is to create the national digital 
+      infrastructure for research and innovation, leveraging existing <strong>HPC</strong>, <strong>HTC</strong> and 
+      <strong>Big Data</strong> infrastructures and evolving towards a cloud data-lake model. The federation of 
+      heterogeneous computing resources and their provisioning through the cloud model are unavoidable steps to 
+      deploy and maintain flash-simulation models in production reliably and efficiently. The definition of a similar
+      <strong><em>MLOps pipeline</em></strong> is one of the main goals of ICSC.
+    </p>
+    {#<p>
+      The   <strong>project</strong> collects
+      public-private joint efforts to 
+
+      L'idea che veicolerei è: la fast simulation, per funzionare, ha bisogno di cicli di fine tuning con GPU e 
+      successiva validazione con single CPU (HTC). Il modello Cloud è ideale per implementare queste pipeline con 
+      risorse eterogenee, ma sposare il modello Cloud con HPC è agli albori ed è uno dei main focus del Middleware 
+      e della federazione delle risorse di icsc
+    </p>#}
+    
   </article>
 
   {# 11. Conclusions and outlook #}
@@ -445,8 +449,8 @@
     {# -------------- #}
     {# For PDF poster #}
     {# -------------- #}
-    {# <figure>
+    <figure>
       <img style="width: 25%" src="img/qr-code.png" alt="QR code">
-    </figure> #}
+    </figure>
   </article>
 {% endblock %}

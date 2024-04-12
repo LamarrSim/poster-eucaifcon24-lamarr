@@ -19,19 +19,17 @@
   <body vocab="http://schema.org/" typeof="ScholarlyArticle">
     <header role="banner">
       <aside>
-                    <div style="width: 24rem">
-    <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
-    <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
-    <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
-    <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
+                                <div style="width: 24rem">
+    <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding-right: 0.55rem; padding-bottom: 0.5rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
+    <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding-left: 0.55rem; padding-bottom: 0.5rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
+    <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding-right: 1.0rem; padding-top: 0.5rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
+    <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding-left: 1.0rem; padding-top: 0.5rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
   </div>
-                  </aside>
+      </aside>
       <div>
         <h1 property="headline">The flash-simulation of the LHCb experiment using the Lamarr framework</h1>
                           <p>in <strong><em>European AI for Fundamental Physics Conference 2024</em></strong> (EuCAIFCon24)</p>
-                        <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
-  <a href="https://indico.nikhef.nl/event/4875/contributions/20381"><img alt="indico contribution" src="https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white"></a>
-            <address>
+                                    <address>
             <span class="medium">
     <a property="author">L. Anderlini<sup>1</sup></a>,
     <a property="author"><strong>M. Barbetti</strong><sup>2</sup></a>,
@@ -57,8 +55,8 @@
                   </span>
       </div>
       <aside>
-                <a href="https://www.aanmelder.nl/eucaifcon24"><img style="padding: 0.55rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
-              </aside>
+                        <a href="https://www.aanmelder.nl/eucaifcon24"><img style="padding-right: 2.5rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
+      </aside>
     </header>
 
     <main property="articleBody">
@@ -76,22 +74,13 @@
     <article>
     <header><h3>2. Fast simulation VS. flash simulation</h3></header>
     <figure>
-      <img style="width: 95%" src="img/schemes/full-sim-scheme.png" alt="full sim schemes">
+      <img style="width: 95%" src="img/schemes/full-fast-sim-scheme.png" alt="full/fast sim schemes">
       <figcaption>
         <small>
           <strong>Detailed simulation</strong> relies on Geant4 to reproduce the radiation-matter
-          interactions that are computed within Gauss*, the LHCb simulation software.
-        </small>
-      </figcaption>
-    </figure>
-    <hr/>
-    <figure>
-      <img style="width: 95%" src="img/schemes/fast-sim-scheme.png" alt="fast sim schemes">
-      <figcaption>
-        <small>
-          <strong><em>Fast simulation</em></strong> techniques aim to speed up the Geant4-based 
-          simulation production by parameterizing the energy deposits instead of relying on 
-          physics models.
+          interactions that are computed within Gauss*, the LHCb simulation software. 
+          <strong><em>Fast simulation</em></strong> techniques aim to speed up Geant4 by parameterizing 
+          the energy deposits instead of relying on physics models.
         </small>
       </figcaption>
     </figure>
@@ -106,7 +95,7 @@
         </small>
       </figcaption>
     </figure>
-      </article>
+  </article>
 
     <article>
     <header><h3>3. What is Lamarr?</h3></header>
@@ -229,7 +218,7 @@
         <li>assuming ordered sequences of photons/clusters, the problem can be modeled with a 
         <strong><em>Transformer</em></strong> model;</li>
         <li>complying with the problem topology, the ECAL response can be modeled with a 
-        <strong><em>Grapha Neural Network</em></strong> (GNN) model</li>
+        <strong><em>Graph Neural Network</em></strong> (GNN) model</li>
       </ul>
     </p>
     <hr/>
@@ -308,10 +297,22 @@
   </article>
 
     <article>
-    <header><h3>10. The ICSC project</h3></header>
+    <header><h3>10. The role of ICSC for Flash Simulation</h3></header>
     <p>
-      TBA
+      The <strong>lifecycle of a generic flash-simulation model</strong> includes designing, training, optimization, 
+      deployment, and validation, before to be put into production. While the development steps often involve 
+      <strong>multiple GPU nodes</strong> (<em>HPC paradigm</em>), the validation phase typically relies on the same 
+      distributed computing resources employed in the <strong>production environment</strong> (<em>HTC paradigm</em>).
     </p>
+    <p>
+      The aim of <strong>ICSC</strong> (<em>Italian Center for SuperComputing</em>) is to create the national digital 
+      infrastructure for research and innovation, leveraging existing <strong>HPC</strong>, <strong>HTC</strong> and 
+      <strong>Big Data</strong> infrastructures and evolving towards a cloud data-lake model. The federation of 
+      heterogeneous computing resources and their provisioning through the cloud model are unavoidable steps to 
+      deploy and maintain flash-simulation models in production reliably and efficiently. The definition of a similar
+      <strong><em>MLOps pipeline</em></strong> is one of the main goals of ICSC.
+    </p>
+        
   </article>
 
     <article>
@@ -356,7 +357,10 @@
         <li>M. Barbetti, <em>The flash-simulation paradigm and its implementation based on Deep Generative Models for the LHCb experiment at CERN</em>, PhD thesis, University of Firenze, 2024</li>
       </ol>
     </small>
-                  </article>
+                <figure>
+      <img style="width: 25%" src="img/qr-code.png" alt="QR code">
+    </figure>
+  </article>
     </main>
 
     <footer>
