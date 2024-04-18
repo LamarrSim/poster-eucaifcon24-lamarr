@@ -19,19 +19,17 @@
   <body vocab="http://schema.org/" typeof="ScholarlyArticle">
     <header role="banner">
       <aside>
-                    <div style="width: 24rem">
-    <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
-    <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
-    <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
-    <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
+                                <div style="width: 24rem">
+    <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding-right: 0.55rem; padding-bottom: 0.5rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
+    <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding-left: 0.55rem; padding-bottom: 0.5rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
+    <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding-right: 1.0rem; padding-top: 0.5rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
+    <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding-left: 1.0rem; padding-top: 0.5rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
   </div>
-                  </aside>
+      </aside>
       <div>
         <h1 property="headline">The flash-simulation of the LHCb experiment using the Lamarr framework</h1>
                           <p>in <strong><em>European AI for Fundamental Physics Conference 2024</em></strong> (EuCAIFCon24)</p>
-                        <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
-  <a href="https://indico.nikhef.nl/event/4875/contributions/20381"><img alt="indico contribution" src="https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white"></a>
-            <address>
+                                    <address>
             <span class="medium">
     <a property="author">L. Anderlini<sup>1</sup></a>,
     <a property="author"><strong>M. Barbetti</strong><sup>2</sup></a>,
@@ -57,38 +55,39 @@
                   </span>
       </div>
       <aside>
-                <a href="https://www.aanmelder.nl/eucaifcon24"><img style="padding: 0.55rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
-              </aside>
+                        <a href="https://www.aanmelder.nl/eucaifcon24"><img style="padding-right: 2.5rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
+      </aside>
     </header>
 
     <main property="articleBody">
           <article>
     <header><h3>1. Motivation</h3></header>
     <p>
-      <strong>Detailed simulation</strong> of the interaction between the traversing particles 
-      and the LHCb active volumes is the major consumer of CPU resources. During the LHC Run2, the
-      LHCb experiment has spent <strong>more than 90% of the pledged CPU time</strong> to simulate
-      events of interest. Matching the upcoming and future demand for simulated samples means that 
-      the development of <strong>faster simulation options</strong> is critical.
+      <strong>Detailed simulation</strong> of the interactions between particles and the LHCb detector 
+      requires significant CPU resources.
+      <ul>
+        <li>LHCb uses <strong>over 90% of CPU resources</strong> for simulation;</li>
+        <li>Current approaches do <strong>not scale</strong> to future needs;</li>
+        <li>Must develop <strong><em>faster</em> simulation options</strong>!</li>
+      </ul>
     </p>
   </article>
 
     <article>
     <header><h3>2. Fast simulation VS. flash simulation</h3></header>
     <figure>
-      <img style="width: 95%" src="img/schemes/full-fast-sim-scheme.png" alt="full/fast sim schemes">
+      <img style="width: 90%" src="img/schemes/full-fast-sim-scheme.png" alt="full/fast sim schemes">
       <figcaption>
         <small>
-          <strong>Detailed simulation</strong> relies on Geant4 to reproduce the radiation-matter
-          interactions that are computed within Gauss*, the LHCb simulation software. 
-          <strong><em>Fast simulation</em></strong> techniques aim to speed up Geant4 by parameterizing 
-          the energy deposits instead of relying on physics models.
+          The <strong>detailed simulation</strong> of physics processes relies on Geant4 and is computed 
+          within Gauss*, the LHCb simulation software. <strong><em>Fast simulation</em></strong> techniques 
+          aim to speed up Geant4 by parameterizing the energy deposits instead of relying on physics models.
         </small>
       </figcaption>
     </figure>
     <hr/>
     <figure>
-      <img style="width: 95%" src="img/schemes/flash-sim-scheme.png" alt="flash sim schemes">
+      <img style="width: 90%" src="img/schemes/flash-sim-scheme.png" alt="flash sim schemes">
       <figcaption>
         <small>
           <strong><em>Flash</em></strong> (or <em>Ultra-Fast</em>) <strong><em>simulation</em></strong> 
@@ -107,15 +106,13 @@
       <strong>modular parameterizations</strong> designed to replace both the simulation and reconstruction steps.
     </p>
     <figure>
-      <img style="width: 98%" src="img/schemes/lamarr-pipeline.png" alt="Lamarr modular layout">
+      <img style="width: 95%" src="img/schemes/lamarr-pipeline.png" alt="Lamarr modular layout">
     </figure>
     <p>
-      The Lamarr pipeline can be split in two chains:
+      The Lamarr pipeline can be split in two branches:
       <ol>
-        <li>a branch treating <strong>charged particles</strong> relying on tracking and particle identification 
-        models;</li>
-        <li>a branch facing the <em>particle-to-particle correlation</em> problem innate in the <strong>neutral 
-        objects</strong> reconstruction.</li>
+        <li><strong>charged particles</strong> require tracking and particle identification models;</li>
+        <li><strong>neutral objects</strong> need to face the <em>particle-to-particle correlation</em> problem.</li>
       </ol>
     </p>
   </article>
@@ -157,8 +154,8 @@
     </p>
     <hr/>
     <figure>
-      <img style="width: 49%" src="img/lhcb-figs/lamarr-trk-efficiency.png" alt="Lamarr trk efficiency">
-      <img style="width: 49%" src="img/lhcb-figs/lamarr-trk-resolution.png" alt="Lamarr trk resolution">
+      <img style="width: 49.5%" src="img/lhcb-figs/lamarr-trk-efficiency.png" alt="Lamarr trk efficiency">
+      <img style="width: 49.5%" src="img/lhcb-figs/lamarr-trk-resolution.png" alt="Lamarr trk resolution">
       <figcaption>
         <small>
           Validation plots for the DNN-based model of the tracking efficiency (left) and the GAN-based model of
@@ -178,7 +175,7 @@
         <em>GAN model</em>;</li>
         <li><strong><u>MUON PID:</u></strong> parameterizes likelihoods resulting from the MUON system &#8594; 
         <em>GAN model</em>;</li>
-        <li><strong><u>isMuon:</u></strong> parameterizes the response of a FPGA-based criterion for muon loose 
+        <li><strong><u>isMuon flag:</u></strong> parameterizes the response of a FPGA-based criterion for muon loose 
         boolean selection &#8594; <em>DNN model</em>;</li>
         <li><strong><u>Global PID:</u></strong> parameterizes the global high-level response of the PID system, 
         consisting of CombDLLs and ProbNNs &#8594; <em>GAN model</em>.</li>
@@ -190,8 +187,8 @@
     </p>
     <hr/>
     <figure>
-      <img style="width: 49%" src="img/lhcb-figs/lamarr-pid-richdll-hist.png" alt="Lamarr RICH histograms">
-      <img style="width: 49%" src="img/lhcb-figs/lamarr-pid-richdll-eff-k.png" alt="Lamarr RICH efficiency">
+      <img style="width: 47%; padding-right: 0.5rem" src="img/lhcb-figs/lamarr-pid-richdll-hist.png" alt="Lamarr RICH histograms">
+      <img style="width: 47%; padding-left: 0.5rem" src="img/lhcb-figs/lamarr-pid-richdll-eff-k.png" alt="Lamarr RICH efficiency">
       <figcaption>
         <small>
           Validation plots for the proton-kaon separation parameterized with the GAN-based models of the RICH 
@@ -225,8 +222,8 @@
     </p>
     <hr/>
     <figure>
-      <img style="width: 47%; padding-right: 0.25rem" src="img/lhcb-figs/lamarr-ecal-full.png" alt="Lamarr ECAL full">
-      <img style="width: 47%; padding-left: 0.25rem" src="img/lhcb-figs/lamarr-ecal-flash.png" alt="Lamarr ECAL flash">
+      <img style="width: 48.5%; padding-right: 0.3rem" src="img/lhcb-figs/lamarr-ecal-full.png" alt="Lamarr ECAL full">
+      <img style="width: 48.5%; padding-left: 0.3rem" src="img/lhcb-figs/lamarr-ecal-flash.png" alt="Lamarr ECAL flash">
       <figcaption>
         <small>
           Validation plots for the \((x, y)\)-position of the ECAL clusters as reconstructed by detailed
@@ -261,8 +258,8 @@
     </p>
     <hr/>
     <figure>
-      <img style="width: 49%" src="img/lhcb-figs/Py8_Lambda_c_mu_mass.png" alt="Py8 Lambda_c mass">
-      <img style="width: 49%" src="img/lhcb-figs/PGun_Lambda_c_mu_mass.png" alt="PGun Lambda_c mass">
+      <img style="width: 48.5%; padding-right: 0.15rem" src="img/lhcb-figs/Py8_Lambda_c_mu_mass.png" alt="Py8 Lambda_c mass">
+      <img style="width: 48.5%; padding-left: 0.15rem" src="img/lhcb-figs/PGun_Lambda_c_mu_mass.png" alt="PGun Lambda_c mass">
       <figcaption>
         <small>
           Validation plots for the \(\Lambda_c^+ \mu^-\) mass obtained from Pythia8 (left) and particle-gun (right) 
@@ -352,12 +349,15 @@
         <li>A. Rogachev and F. Ratnikov, <em>GAN with an Auxiliary Regressor for the Fast Simulation of the Electromagnetic Calorimeter Response</em>, <a href="https://doi.org/10.1088/1742-6596/2438/1/012086">J. Phys. Conf. Ser. <strong>2438</strong> (2023) 012086</a>, <a href="https://arxiv.org/abs/2207.06329">arXiv:2207.06329</a></li>
         <li>L. Anderlini <em>et al.</em>, <em>Lamarr: the ultra-fast simulation option for the LHCb experiment</em>, <a href="https://doi.org/10.22323/1.414.0233">PoS <strong>ICHEP2022</strong> (2023) 233</a></li>
         <li>M. Barbetti, <em>Lamarr: LHCb ultra-fast simulation based on machine learning models deployed within Gauss</em>, <a href="https://arxiv.org/abs/2303.11428">arXiv:2303.11428</a></li>
-        <li>F. Vaselli <em>et al.</em>, <em>FlashSim prototype: an end-to-end fast simulation using Normalizing Flow</em>, <a href="https://cds.cern.ch/record/2858890">CERN-CMS-NOTE-2023-003</a></li>
-        <li>L. Anderlini <em>et al.</em>, <em>The LHCb ultra-fast simulation option, Lamarr: design and validation</em>, <a href="https://arxiv.org/abs/2309.13213">arXiv:2309.13213</a></li>
+                <li>L. Anderlini <em>et al.</em>, <em>The LHCb ultra-fast simulation option, Lamarr: design and validation</em>, <a href="https://arxiv.org/abs/2309.13213">arXiv:2309.13213</a></li>
+        <li>F. Vaselli <em>et al.</em>, <em>End-to-end simulation of particle physics events with Flow Matching and generator Oversampling</em>, <a href="https://arxiv.org/abs/2402.13684">2402.13684</a></li>
         <li>M. Barbetti, <em>The flash-simulation paradigm and its implementation based on Deep Generative Models for the LHCb experiment at CERN</em>, PhD thesis, University of Firenze, 2024</li>
       </ol>
     </small>
-                  </article>
+                <figure>
+      <img style="width: 30%" src="img/qr-code.png" alt="QR code">
+    </figure>
+  </article>
     </main>
 
     <footer>
