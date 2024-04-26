@@ -24,9 +24,9 @@
   {# --------------- #}
   {# For HTML poster #}
   {# --------------- #}
-  <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
+  {# <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
   <a href="https://indico.nikhef.nl/event/4875/contributions/20381"><img alt="indico contribution" src="https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white"></a>
-  <a href="https://indico.nikhef.nl/event/4875/contributions/20381/#preview:11599"><img alt="poster PDF" src="https://img.shields.io/badge/PDF-poster-EC1C24?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white"></a>
+  <a href="https://indico.nikhef.nl/event/4875/contributions/20381/#preview:11599"><img alt="poster PDF" src="https://img.shields.io/badge/PDF-poster-EC1C24?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white"></a> #}
   {# <a href="https://arxiv.org/abs/2303.11428"><img alt="arXiv preprint" src="https://img.shields.io/badge/arXiv-2303.11428-B31B1B?style=flat&logoColor=white"></a> #}
 {% endblock %}
 
@@ -61,21 +61,21 @@
   {# --------------- #}
   {# For HTML poster #}
   {# --------------- #}
-  <div style="width: 24rem">
+  {# <div style="width: 24rem">
     <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
     <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
     <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
     <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
-  </div>
+  </div> #}
   {# -------------- #}
   {# For PDF poster #}
   {# -------------- #}
-  {# <div style="width: 24rem">
+  <div style="width: 24rem">
     <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding-right: 0.55rem; padding-bottom: 0.5rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
     <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding-left: 0.55rem; padding-bottom: 0.5rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
     <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding-right: 1.0rem; padding-top: 0.5rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
     <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding-left: 1.0rem; padding-top: 0.5rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
-  </div> #}
+  </div>
 {% endblock %}
 
 {# Extra logos shown on the right side #}
@@ -83,11 +83,11 @@
   {# --------------- #}
   {# For HTML poster #}
   {# --------------- #}
-  <a href="{{ venue_url }}"><img style="padding: 0.55rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
+  {# <a href="{{ venue_url }}"><img style="padding: 0.55rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a> #}
   {# -------------- #}
   {# For PDF poster #}
   {# -------------- #}
-  {# <a href="{{ venue_url }}"><img style="padding-right: 2.5rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a> #}
+  <a href="{{ venue_url }}"><img style="padding-right: 2.5rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
 {% endblock %}
 
 {### Footer ###}
@@ -345,19 +345,19 @@
     </p>
     <p class="boxed center">
       {# <small> #}
-        <strong><u>Detailed simulation:</u></strong> Pythia8 + EvtGen + Geant4 + reco<br/>
+        <strong><u>Detailed simulation:</u></strong> Pythia8 + Geant4 + reco<br/>
         1M events @ 2.5 kHS06.s/event ≃ 80 HS06.y
       {# </small> #}
     </p>
     <p class="boxed center">
       {# <small> #}
-        <strong><u>Flash simulation:</u></strong> Pythia8 + EvtGen + Lamarr<br/>
+        <strong><u>Flash simulation:</u></strong> Pythia8 + Lamarr<br/>
         1M events @ 0.5 kHS06.s/event ≃ 15 HS06.y
       {# </small> #}
     </p>
     <p class="boxed center">
       {# <small> #}
-        <strong><u>Flash simulation:</u></strong> ParticleGun + EvtGen + Lamarr<br/>
+        <strong><u>Flash simulation:</u></strong> ParticleGun + Lamarr<br/>
         100M events @ 1 HS06.s/event ≃ 4 HS06.y
       {# </small> #}
     </p>
@@ -431,8 +431,8 @@
     {# -------------- #}
     {# For PDF poster #}
     {# -------------- #}
-    {# <figure>
+    <figure>
       <img style="width: 25%" src="img/qr-code.png" alt="QR code">
-    </figure> #}
+    </figure>
   </article>
 {% endblock %}
