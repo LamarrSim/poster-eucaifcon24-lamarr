@@ -24,8 +24,8 @@
   {# --------------- #}
   {# For HTML poster #}
   {# --------------- #}
-  <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
-  <a href="https://indico.nikhef.nl/event/4875/contributions/20381"><img alt="indico contribution" src="https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white"></a>
+  {# <a href="https://indico.nikhef.nl/event/4875"><img alt="indico event" src="https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white"></a>
+  <a href="https://indico.nikhef.nl/event/4875/contributions/20381"><img alt="indico contribution" src="https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white"></a> #}
   {# <a href="https://indico.nikhef.nl/event/4875/contributions/20381/attachments/xxx/yyy/lamarr_poster_eucaifcon2024.pdf"><img alt="poster PDF" src="https://img.shields.io/badge/PDF-poster-EC1C24?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white"></a> #}
   {# <a href="https://arxiv.org/abs/2303.11428"><img alt="arXiv preprint" src="https://img.shields.io/badge/arXiv-2303.11428-B31B1B?style=flat&logoColor=white"></a> #}
 {% endblock %}
@@ -61,21 +61,21 @@
   {# --------------- #}
   {# For HTML poster #}
   {# --------------- #}
-  <div style="width: 24rem">
+  {# <div style="width: 24rem">
     <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
     <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
     <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
     <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding: 0.55rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
-  </div>
+  </div> #}
   {# -------------- #}
   {# For PDF poster #}
   {# -------------- #}
-  {# <div style="width: 24rem">
+  <div style="width: 24rem">
     <a href="https://next-generation-eu.europa.eu"><img style="height: 2.5rem; padding-right: 0.55rem; padding-bottom: 0.5rem" src="img/logos/nextgeneu-white-logo.png" alt="NextGenEU logo"></a>
     <a href="https://www.mur.gov.it"><img style="height: 2.5rem; padding-left: 0.55rem; padding-bottom: 0.5rem" src="img/logos/mur-white-logo.png" alt="MUR logo"></a>
     <a href="https://www.italiadomani.gov.it"><img style="height: 2.5rem; padding-right: 1.0rem; padding-top: 0.5rem" src="img/logos/pnrr-white-logo.png" alt="PNRR logo"></a>
     <a href="https://www.supercomputing-icsc.it/en"><img style="height: 2.5rem; padding-left: 1.0rem; padding-top: 0.5rem" src="img/logos/icsc-white-logo-nobkg.png" alt="ICSC logo"></a>
-  </div> #}
+  </div>
 {% endblock %}
 
 {# Extra logos shown on the right side #}
@@ -83,11 +83,11 @@
   {# --------------- #}
   {# For HTML poster #}
   {# --------------- #}
-  <a href="{{ venue_url }}"><img style="padding: 0.55rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
+  {# <a href="{{ venue_url }}"><img style="padding: 0.55rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a> #}
   {# -------------- #}
   {# For PDF poster #}
   {# -------------- #}
-  {# <a href="{{ venue_url }}"><img style="padding-right: 2.5rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a> #}
+  <a href="{{ venue_url }}"><img style="padding-right: 2.5rem" src="img/logos/eucaifcon24-white-logo.png" alt="EuCAIFCon logo"></a>
 {% endblock %}
 
 {### Footer ###}
@@ -261,7 +261,7 @@
   <article>
     <header><h3>7. Neutral particles branch: the ECAL detector</h3></header>
     <p>
-      The flash simulation of the LHCb ECAL detector is not trivial task:
+      The flash simulation of the LHCb ECAL detector is a non trivial task:
       <ul>
         <li>bremsstrahlung radiation, converted photons, or merged \(\pi^0\) may lead to have \(n\) <strong>generated 
         particles</strong> responsible for \(m\) <strong>reconstructed objects</strong> (in general, with \(n \ne m)\);</li>
@@ -300,8 +300,8 @@
     <p>
       Lamarr provides the high-level response of the LHCb detector by relying on a <strong>pipeline of</strong> 
       (subsequent) <strong>ML-based modules</strong>. To validate the charged particles chain, the distributions 
-      of a set of <strong>analysis-level</strong> reconstructed quantities resulting from Lamarr have been 
-      compared with that obtained from detailed simulation for \(\Lambda_b^0 \to \Lambda_c^+ \mu^- X\) decays 
+      of a set of <strong>analysis-level</strong> reconstructed quantities resulting from Lamarr have been compared 
+      with those obtained from detailed simulation for \(\Lambda_b^0 \to \Lambda_c^+ \mu^- X\) decays 
       with \(\Lambda_c^+ \to p K^- \pi^+\). 
     </p>
     <p>
@@ -340,24 +340,24 @@
       becomes the new <strong>major CPU consumer</strong>.
     </p>
     <p>
-      Lamarr allows to reduce the CPU cost for the simulation phase of (at least) 
-      <strong>two-order-of-magnitude</strong>. Further timing will require speeding up the generators.
+      Lamarr could allow to reduce the CPU cost for the simulation of (at least) 
+      <strong>two-order-of-magnitude</strong>. Further reductions will require speeding up the generators.
     </p>
     <p class="boxed center">
       {# <small> #}
-        <strong><u>Detailed simulation:</u></strong> Pythia8 + Geant4<br/>
+        <strong><u>Detailed simulation:</u></strong> Pythia8 + EvtGen + Geant4 + reco<br/>
         1M events @ 2.5 kHS06.s/event ≃ 80 HS06.y
       {# </small> #}
     </p>
     <p class="boxed center">
       {# <small> #}
-        <strong><u>Flash simulation:</u></strong> Pythia8 + Lamarr<br/>
+        <strong><u>Flash simulation:</u></strong> Pythia8 + EvtGen + Lamarr<br/>
         1M events @ 0.5 kHS06.s/event ≃ 15 HS06.y
       {# </small> #}
     </p>
     <p class="boxed center">
       {# <small> #}
-        <strong><u>Flash simulation:</u></strong> Particle Gun + Lamarr<br/>
+        <strong><u>Flash simulation:</u></strong> ParticleGun + EvtGen + Lamarr<br/>
         100M events @ 1 HS06.s/event ≃ 4 HS06.y
       {# </small> #}
     </p>
@@ -431,8 +431,8 @@
     {# -------------- #}
     {# For PDF poster #}
     {# -------------- #}
-    {# <figure>
+    <figure>
       <img style="width: 25%" src="img/qr-code.png" alt="QR code">
-    </figure> #}
+    </figure>
   </article>
 {% endblock %}
