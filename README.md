@@ -5,7 +5,7 @@ in [*European AI for Fundamental Physics Conference 2024*](https://www.aanmelder
 [![](https://img.shields.io/badge/indico-event-black?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875)
 [![](https://img.shields.io/badge/indico-contribution-c48e48?style=flat&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381)
 [![](https://img.shields.io/badge/HTML-poster-E34F26?style=flat&logo=HTML5&logoColor=white)](https://lamarrsim.github.io/poster-eucaifcon24-lamarr/poster.html)
-[![](https://img.shields.io/badge/PDF-poster-EC1C24?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381/#preview:11599)
+[![](https://img.shields.io/badge/PDF-poster-EC1C24?style=flat&logo=Adobe%20Acrobat%20Reader&logoColor=white)](https://indico.nikhef.nl/event/4875/contributions/20381/#preview:11601)
 <!--
 [![](https://img.shields.io/badge/arXiv-2303.11428-B31B1B?style=flat&logoColor=white)](https://arxiv.org/abs/2303.11428)
 [![](https://img.shields.io/badge/J%20Phys:%20Conf%20Ser-(1525)012097-236fb5?style=flat&logoColor=white)](https://dx.doi.org/10.1088/1742-6596/1525/1/012097)
